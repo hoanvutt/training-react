@@ -9,12 +9,8 @@ const App = function() {
 };
 */
 
-function getButtonText() {
-  return 'Click on Me!';
-}
-
 const App = () => {
-  const buttonText = 'Click Me!';
+  const buttonText = { text : 'Click Me!' };
 
   return (
     <div>
@@ -23,7 +19,7 @@ const App = () => {
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: 'blue', color: 'white' }}>
-        {getButtonText()}
+        {buttonText.text}
       </button>
     </div>
   );
