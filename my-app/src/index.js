@@ -9,7 +9,17 @@ const App = function() {
 };
 */
 const App = () => {
-  return <h1>Hi there!</h1>;
+  return (
+    <div>
+      <label class="label" for="name">
+        Enter Name:
+      </label>
+      <input id="name" type="text" />
+      <button style={{ backgroundColor: 'blue', color: 'white' }}>
+        Submit
+      </button>
+    </div>
+  );
 };
 
 // Take the react component and show it on the screen
