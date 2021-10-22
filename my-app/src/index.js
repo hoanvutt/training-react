@@ -11,6 +11,7 @@ const App = function() {
 
 const App = () => {
   const buttonText = { text : 'Click Me!' };
+  const style = { backgroundColor: 'blue', color: 'white' };
 
   return (
     <div>
@@ -18,7 +19,7 @@ const App = () => {
         Enter Name:
       </label>
       <input id="name" type="text" />
-      <button style={{ backgroundColor: 'blue', color: 'white' }}>
+      <button style={style}>
         {buttonText.text}
       </button>
     </div>
